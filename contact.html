@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Contact Us | Aid</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="nav__logo">Aid</div>
+        <ul class="nav__links">
+          <li class="link"><a href="index.html">Home</a></li>
+          <li class="link"><a href="services.html">Services</a></li>
+          <li class="link"><a href="about.html">About</a></li>
+          <li class="link"><a href="reviews.html">Reviews</a></li>
+          <li class="link"><a href="blog.html">Blog</a></li>
+          <li class="link"><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="btn btn-register">Register Now</button>
+      </nav>
+
+      <header class="page__header">
+        <h1>Contact Aid</h1>
+        <p>Our Dedicated Support Team is Always Ready to Help You</p>
+      </header>
+
+      <section class="section__container">
+        <div class="contact__container">
+            <div class="contact__form">
+                <p class="section__subheader" style="text-align: left;">GET IN TOUCH</p>
+                <h2 class="section__header" style="text-align: left; margin-bottom: 2rem;">Send Us a Message</h2>
+                <form onsubmit="event.preventDefault(); showToast('Message Sent! Our team will get back to you soon.'); this.reset();" style="display: grid; gap: 1rem;">
+                    <input type="text" placeholder="Full Name" required style="padding: 1rem; border: 1px solid #ccc; border-radius: 5px;" />
+                    <input type="email" placeholder="Email Address" required style="padding: 1rem; border: 1px solid #ccc; border-radius: 5px;" />
+                    <input type="text" placeholder="Subject" required style="padding: 1rem; border: 1px solid #ccc; border-radius: 5px;" />
+                    <textarea placeholder="Your Message..." rows="6" required style="padding: 1rem; border: 1px solid #ccc; border-radius: 5px; font-family: inherit;"></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+            <div class="contact__info">
+                <h3>Our Offices</h3>
+                <div class="contact__item">
+                    <i class="ri-map-pin-line"></i>
+                    <div>
+                        <p><strong>Main Clinic</strong></p>
+                        <p>123 Healthcare Blvd, Manhattan, NYC</p>
+                    </div>
+                </div>
+                <div class="contact__item">
+                    <i class="ri-phone-line"></i>
+                    <div>
+                        <p><strong>Emergency Hotlines</strong></p>
+                        <p>+1 800 AID HELP (24/7)</p>
+                        <p>+1 212 555 0198</p>
+                    </div>
+                </div>
+                <div class="contact__item">
+                    <i class="ri-mail-line"></i>
+                    <div>
+                        <p><strong>Support Email</strong></p>
+                        <p>care@aid.healthcare</p>
+                    </div>
+                </div>
+                <div class="footer__socials" style="margin-top: 2rem; justify-content: flex-start;">
+                    <span style="color: var(--text-dark); border-color: var(--text-dark);"><i class="ri-facebook-fill"></i></span>
+                    <span style="color: var(--text-dark); border-color: var(--text-dark);"><i class="ri-twitter-fill"></i></span>
+                    <span style="color: var(--text-dark); border-color: var(--text-dark);"><i class="ri-instagram-line"></i></span>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="section__container extra-section">
+          <p class="section__subheader">LOCATIONS</p>
+          <h2 class="section__header" style="margin-bottom: 2rem;">Find Us on the Map</h2>
+          <div style="height: 400px; border-radius: 1rem; background: #eee; display: flex; align-items: center; justify-content: center; color: #888;">
+              <p>[Interactive Global Map Placeholder]</p>
+          </div>
+      </section>
+
+      <footer id="contact">
+        <div class="section__container footer__container">
+          <div class="footer__col">
+            <h3>Aid</h3>
+            <p>Our goal is to provide accessible and high-quality medical services to everyone, ensuring a healthier future for all.</p>
+            <div class="footer__socials">
+              <span><i class="ri-facebook-fill"></i></span>
+              <span><i class="ri-twitter-fill"></i></span>
+              <span><i class="ri-instagram-line"></i></span>
+              <span><i class="ri-linkedin-fill"></i></span>
+            </div>
+          </div>
+          <div class="footer__col">
+            <h4>Services</h4>
+            <p>Cardiology</p>
+            <p>Mental Health</p>
+            <p>Emergency Care</p>
+            <p>Pharmacy</p>
+          </div>
+          <div class="footer__col">
+            <h4>Quick Links</h4>
+            <p>About Us</p>
+            <p>Services</p>
+            <p>Blog</p>
+            <p>Contact Us</p>
+          </div>
+          <div class="footer__col">
+            <h4>Contact Info</h4>
+            <p><span><i class="ri-map-pin-line"></i></span> 123 Healthcare St, NYC</p>
+            <p><span><i class="ri-mail-line"></i></span> info@aid.com</p>
+            <p><span><i class="ri-phone-line"></i></span> +1 234 567 890</p>
+          </div>
+        </div>
+        <div class="footer__bar">
+          Copyright © 2024 Aid. All rights reserved.
+        </div>
+      </footer>
+    </div>
+
+    <div id="register-modal" class="modal">
+      <div class="modal__content">
+        <span class="modal__close">&times;</span>
+        <div class="modal__image"></div>
+        <div class="modal__form__container">
+          <h2>Join Aid Today</h2>
+          <form class="modal__form" id="register-form">
+            <input type="text" placeholder="Full Name" required />
+            <input type="email" placeholder="Email Address" required />
+            <input type="tel" placeholder="Phone Number" required />
+            <select required>
+              <option value="" disabled selected>Membership Type</option>
+              <option value="basic">Basic Companion</option>
+              <option value="premium">Premium Care</option>
+              <option value="family">Family Package</option>
+            </select>
+            <button type="submit" class="btn">Confirm Registration</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="success-toast" class="success-toast">
+      <i class="ri-checkbox-circle-fill" style="font-size: 1.5rem;"></i>
+      <span id="toast-msg">Success!</span>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Our Medical Services | Aid</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="nav__logo">Aid</div>
+        <ul class="nav__links">
+          <li class="link"><a href="index.html">Home</a></li>
+          <li class="link"><a href="services.html">Services</a></li>
+          <li class="link"><a href="about.html">About</a></li>
+          <li class="link"><a href="reviews.html">Reviews</a></li>
+          <li class="link"><a href="blog.html">Blog</a></li>
+          <li class="link"><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="btn btn-register">Register Now</button>
+      </nav>
+
+      <header class="page__header">
+        <h1>Medical Excellence</h1>
+        <p>Providing Specialized Care for Every Aspect of Your Health</p>
+      </header>
+
+      <section class="section__container extra-section">
+        <p class="section__subheader">PRIMARY CARE</p>
+        <h2 class="section__header">Diagnostic & Treatment</h2>
+        <div class="service__grid">
+          <div class="service__card">
+            <span><i class="ri-heart-pulse-line"></i></span>
+            <h4>Cardiology</h4>
+            <p>Comprehensive heart screenings, ECG, and stress tests conducted by leading experts.</p>
+          </div>
+          <div class="service__card">
+            <span><i class="ri-microscope-line"></i></span>
+            <h4>Advanced Lab</h4>
+            <p>State-of-the-art laboratory services for precise and quick results on all vital tests.</p>
+          </div>
+          <div class="service__card">
+            <span><i class="ri-nurse-line"></i></span>
+            <h4>General Surgery</h4>
+            <p>Minimally invasive procedures and post-operative care in a controlled environment.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__container extra-section">
+        <p class="section__subheader">SPECIALIZED CARE</p>
+        <h2 class="section__header">Rehabilitation & Therapy</h2>
+        <div class="service__grid">
+          <div class="service__card">
+            <span><i class="ri-mental-health-line"></i></span>
+            <h4>Neurology</h4>
+            <p>In-depth care for brain and nervous system disorders with modern neuro-imaging.</p>
+          </div>
+          <div class="service__card">
+            <span><i class="ri-run-line"></i></span>
+            <h4>Physical Therapy</h4>
+            <p>Customized recovery plans to restore mobility and strength after injury or surgery.</p>
+          </div>
+          <div class="service__card">
+            <span><i class="ri-flask-line"></i></span>
+            <h4>Dermatology</h4>
+            <p>Advanced treatment for skin conditions using the latest dermatological research.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__container extra-section">
+        <p class="section__subheader">24/7 SUPPORT</p>
+        <h2 class="section__header">Emergency Services</h2>
+        <p class="section__description">Our emergency department is always ready to handle critical cases with speed and precision.</p>
+        <div class="why__grid">
+          <div class="why__card">
+            <span><i class="ri-truck-line"></i></span>
+            <div>
+              <h4>Ambulance Fleet</h4>
+              <p>Equipped with ICU-level life support systems for immediate intervention.</p>
+            </div>
+          </div>
+          <div class="why__card">
+            <span><i class="ri-alarm-warning-line"></i></span>
+            <div>
+              <h4>Trauma Unit</h4>
+              <p>Specialized doctors ready to provide life-saving care in minutes.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer id="contact">
+        <div class="section__container footer__container">
+          <div class="footer__col">
+            <h3>Aid</h3>
+            <p>Our goal is to provide accessible and high-quality medical services to everyone, ensuring a healthier future for all.</p>
+            <div class="footer__socials">
+              <span><i class="ri-facebook-fill"></i></span>
+              <span><i class="ri-twitter-fill"></i></span>
+              <span><i class="ri-instagram-line"></i></span>
+              <span><i class="ri-linkedin-fill"></i></span>
+            </div>
+          </div>
+          <div class="footer__col">
+            <h4>Services</h4>
+            <p>Cardiology</p>
+            <p>Mental Health</p>
+            <p>Emergency Care</p>
+            <p>Pharmacy</p>
+          </div>
+          <div class="footer__col">
+            <h4>Quick Links</h4>
+            <p>About Us</p>
+            <p>Services</p>
+            <p>Blog</p>
+            <p>Contact Us</p>
+          </div>
+          <div class="footer__col">
+            <h4>Contact Info</h4>
+            <p><span><i class="ri-map-pin-line"></i></span> 123 Healthcare St, NYC</p>
+            <p><span><i class="ri-mail-line"></i></span> info@aid.com</p>
+            <p><span><i class="ri-phone-line"></i></span> +1 234 567 890</p>
+          </div>
+        </div>
+        <div class="footer__bar">
+          Copyright © 2024 Aid. All rights reserved.
+        </div>
+      </footer>
+    </div>
+
+    <div id="register-modal" class="modal">
+      <div class="modal__content">
+        <span class="modal__close">&times;</span>
+        <div class="modal__image"></div>
+        <div class="modal__form__container">
+          <h2>Join Aid Today</h2>
+          <form class="modal__form" id="register-form">
+            <input type="text" placeholder="Full Name" required />
+            <input type="email" placeholder="Email Address" required />
+            <input type="tel" placeholder="Phone Number" required />
+            <select required>
+              <option value="" disabled selected>Membership Type</option>
+              <option value="basic">Basic Companion</option>
+              <option value="premium">Premium Care</option>
+              <option value="family">Family Package</option>
+            </select>
+            <button type="submit" class="btn">Confirm Registration</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="success-toast" class="success-toast">
+      <i class="ri-checkbox-circle-fill" style="font-size: 1.5rem;"></i>
+      <span id="toast-msg">Success!</span>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
